@@ -5,7 +5,6 @@ WORKDIR /app
 
 RUN apk -U upgrade && \
     gem install bundler && \
-    gem install sinatra
+    bundle
 
 COPY . /app
-RUN ruby /app/home.rb
